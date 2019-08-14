@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  additionservice:
+    build:
+      context: .
+    container_name: calculator
+    ports:
+      - "8888:8080"
+    networks:
+      - additionservice
+    
+networks:
+  additionservice:
+
+
