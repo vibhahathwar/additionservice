@@ -40,7 +40,7 @@ public class AdditionTest {
 	}
 	
 	@Test
-	public void add_doublenumber() {
+	public void add_numbers_test1() {
 		logger.info("test sum of list of numbers");
 		List<String> numbers = new ArrayList<String>();
 		numbers.add("1.0");
@@ -50,13 +50,25 @@ public class AdditionTest {
 	}
 	
 	@Test
-	public void add_numbers() {
+	public void add_numbers_test2() {
 		logger.info("test sum of list of numbers");
 		List<String> numbers = new ArrayList<String>();
 		numbers.add("0");
 		numbers.add("-0");	
 		double result = calculatorService.addition(numbers);
 		assertEquals(-0, result, 0);			
+	}
+	
+	@Test
+	public void add_numbers_test3() {
+		logger.info("test sum of list of numbers");
+		List<String> numbers = new ArrayList<String>();
+		numbers.add("13124.12");
+		numbers.add("5678");
+		numbers.add("100.78");
+		numbers.add("200");
+		double result = calculatorService.addition(numbers);
+		assertEquals(19102.9, result, 0);			
 	}
 	
 		

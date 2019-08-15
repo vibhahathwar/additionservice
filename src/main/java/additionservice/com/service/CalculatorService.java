@@ -49,7 +49,7 @@ public class CalculatorService implements CalculatorServiceInterface{
 		}
 		}catch(NumberFormatException ex) {
 			logger.error("unable to convert to numbers");
-			throw new CustomCalculatorException("unable to convert to Numbers, enter Numbers with comma seperated");
+			throw new CustomCalculatorException("Enter number/numbers delimited by (,)");
 		}catch(Exception ex) {
 			throw new CustomCalculatorException("Try once again!!!");
 		}
@@ -64,7 +64,7 @@ public class CalculatorService implements CalculatorServiceInterface{
 		logger.info("validate List for empty");
 		if(values.size() == 0) {
 			logger.error("Empty List");
-			throw new CustomCalculatorException("Numbers are not entered");
+			throw new CustomCalculatorException("Input not entered");
 		}	
 	}
 }
