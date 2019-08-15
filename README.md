@@ -6,7 +6,7 @@ This application is developed using Java 8,Spring Boot 2.1.6. It consists of Cal
 
 Unit test cases has been written in order to cover positive and negative test case scenarios.
 
-Application can be run using Docker Container or Standalone Tomcat Server by deploying the war file.
+Application can be run using Docker Container or Standalone Tomcat Server by deploying the war file and also it can be run on IDE like Eclipse by importing the project and run on server.
 
 Below are the steps to run Application on stand alone Tomcat server:
 ------------------------------------------------------------------------------------------------------------
