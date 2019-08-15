@@ -42,8 +42,10 @@ Pre-requisites : Docker , Docker Compose
                   
 [user@localhost additionservice]$ curl -XGET http://localhost:8888/additionservice/calculator/add?values=2,54,66
 {"sum":122.0} 
+
 [user@localhost additionservice]$ curl -XGET http://localhost:8888/additionservice/calculator/add?values=a,c
 {"errorMessage":"Enter number/numbers delimited by (,)"} 
+
 [user@localhost additionservice]$ curl -XGET http://localhost:8888/additionservice/calculator/add?values=3.55,5.77
 {"sum":9.32}
 
