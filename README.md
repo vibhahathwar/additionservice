@@ -40,7 +40,6 @@ Pre-requisites : Docker , Docker Compose
 
 [user@localhost additionservice]$ docker-compose ps ##check the services running and the portmappings
    Name          Command       State           Ports         
-\\-------------------------------------------------------------
 calculator   catalina.sh run   Up      0.0.0.0:8888->8080/tcp
 
 [user@localhost additionservice]$ curl -XGET http://localhost:8888/additionservice/calculator/add?values=2,54,66
