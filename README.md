@@ -2,10 +2,10 @@
 
 Additionservice is a REST API, which calculates the sum of numbers and provides output in JSON format as {"sum":addition of numbers}.
 
-This application is developed using Java 8,Spring Boot 2.1.6. It consists of CalculatorController as a RESTController class for the application, 
-CalculatorService class includes validation and caculation part(logic), AdditionModel is the model class and exception handling is done by 
-CustomCalculatorException class.
+This application is developed using Java 8,Spring Boot 2.1.6. It consists of CalculatorController as a RESTController class for the application,calculatorService class includes validation and caculation part(logic),AdditionModel is the model class and exception handling is done by customCalculatorException class.
+
 Unit test cases has been written in order to cover positive and negative test case scenarios.
+
 Application can be run using Docker Container or Standalone Tomcat Server by deploying the war file.
 
 Below are the steps to run Application on stand alone Tomcat server:
