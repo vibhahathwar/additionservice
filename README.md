@@ -14,14 +14,20 @@ Below are the steps to run Application on stand alone Tomcat server:
 Pre-requisite : Tomcat, Maven 3.5.4, Java 8
 
 Step 1 : clone the git repo https://github.com/vibhahathwar/additionservice.git and Navigate to additionService folder (cd additionservice)
+
 step 2 : Clean and build the application using Maven. 
          mvn clean install 
+         
 step 3 : step 2 will generate the war file (additionservice.war) in the Target folder of additionservice.
+
 step 4 : Copy the war file into tomcat webapps folder.
+
 Step 5 : Start the tomcat.
+
 Step 6 : In the web browser,enter url http://localhost:8080/additionservice/calculator/add?values=10,20
          output will be displayed in JSON format as {"sum" : 30.0}
          REST API can be tested using Postman also by providing the above mentioned url.
+         
 Step 7 : Unit test cases can be checked by using - mvn test.
 
 
